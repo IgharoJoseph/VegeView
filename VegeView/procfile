@@ -1,1 +1,1 @@
-web: gunicorn VegeView.wsgi
+web: uvicorn VegeView.asgi:application --host 0.0.0.0 --port $PORT
